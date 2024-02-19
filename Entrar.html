@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(230, 235, 235);
+        }
+
+        h1 {
+            margin-left: 510px;
+            margin-top: 70px;
+            font-size: 49px;
+            color:rgb(72, 93, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .branco-1 {
+            background-color: white;
+            height: 350px;
+            width: 400px;
+            margin-left: 415px;
+            margin-top: -20px;
+            border-radius: 10px;
+        }
+
+        .input-botao {
+            margin-left: 20px;
+            margin-top: 60px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: 1px solid rgb(224, 224, 230);
+            border-radius: 5px;
+            width: 350px;
+            height: 40px;
+        }
+
+        .input-botao-1 {
+            margin-left: 20px;
+            margin-top: 40px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: 1px solid rgb(224, 224, 230);
+            border-radius: 5px;
+            width: 350px;
+            height: 40px;
+        }
+
+        .para-1 {
+            margin-left: 540px;
+            margin-top: -350px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .botao-1 button {
+            margin-left: 437px;
+            margin-top: 159px;
+            border: none;
+            border-radius: 10px;
+            background-color:rgb(58, 77, 223);
+            color: white;
+            cursor: pointer;
+            height: 50px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .para-2 {
+            margin-left: 550px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+    <title>Entrar no facebook</title>
+</head>
+<body>
+    <h1>facebook</h1>
+
+    <div class="branco-1">
+        <input type="text" class="input-botao" placeholder="Email ou telefone">
+
+        <input type="text" class="input-botao-1" placeholder="senha">
+         
+    </div>
+     <div class="para-1">
+        <p>Entrar no facebook</p>
+     </div>
+
+    <div class="botao-1">
+        <button>Entrar</button>
+    </div>
+
+    <div class="para-2">
+        <a href="esqueceu.html"><p>Esqueceu a senha?</p></a>
+    </div>
+
+    <script>
+        function habilitarEdicao() {
+            var campoDeTexto = document.getElementById('campoDeTexto');
+            var botao = document.querySelector('.botao-editar button');
+
+            if (campoDeTexto.style.display === 'none') {
+                campoDeTexto.style.display = 'block';
+                campoDeTexto.value = ''; // Limpar o conteúdo ao entrar no modo de edição
+                botao.innerText = 'Salvar';
+            } else {
+                campoDeTexto.style.display = 'none';
+                botao.innerText = 'Editar';
+            }
+        }
+    </script
+</body>
+</html>
